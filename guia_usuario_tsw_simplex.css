@@ -1,0 +1,91 @@
+body {
+    background: #f5f5f5;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px 50px 30px 50px;
+    box-shadow: 0 0 18px 2px #bbb;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.3em;
+    margin-bottom: 0.2em;
+    color: #2d3e50;
+}
+
+.subtitulo {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.topico {
+    margin-bottom: 38px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.topico:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 1.4em;
+    color: #1a2a3a;
+    margin-bottom: 12px;
+}
+
+.alarme {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.problema {
+    color: #fbc02d;
+    font-weight: bold;
+}
+
+.subtopico {
+    font-size: 0.95em;
+    color: #888;
+    font-weight: normal;
+}
+
+.img-topico {
+    display: block;
+    margin: 0 auto 18px auto;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.explicacao {
+    font-size: 1.05em;
+    color: #333;
+    line-height: 1.7;
+    margin: 0 0 0 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-size: 0.98em;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 18px;
+} 
