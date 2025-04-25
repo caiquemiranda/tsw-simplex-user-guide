@@ -80,8 +80,8 @@ h2 {
 .img-topico {
     display: block;
     margin: 0 auto 18px auto;
-    width: 120px;
-    height: 120px;
+    width: 500px;
+    height: 380px;
     object-fit: contain;
     background: #eaeaea;
     border: 1px solid #ccc;
