@@ -7,28 +7,45 @@ body {
 
 .container {
     background: #fff;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 40px 50px 30px 50px;
-    box-shadow: 0 0 18px 2px #bbb;
-    border-radius: 8px;
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    page-break-after: always;
+    break-after: page;
 }
 
-header {
+header,
+.topico,
+.faq,
+.contatos {
+    width: 100%;
     text-align: center;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-h1 {
-    font-size: 2.3em;
-    margin-bottom: 0.2em;
+h1,
+h2 {
+    font-size: 2.5em;
     color: #2d3e50;
+    margin: 0;
+    padding: 0;
 }
 
 .subtitulo {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #666;
-    margin-bottom: 0;
+    margin-top: 18px;
 }
 
 .topico {
@@ -39,12 +56,6 @@ h1 {
 
 .topico:last-child {
     border-bottom: none;
-}
-
-h2 {
-    font-size: 1.4em;
-    color: #1a2a3a;
-    margin-bottom: 12px;
 }
 
 .alarme {
@@ -104,20 +115,32 @@ footer {
     .container {
         box-shadow: none;
         margin: 0;
-        padding: 0 0 0 0;
-        max-width: 100%;
+        padding: 0;
+        max-width: 100vw;
+        min-height: 100vh;
         border-radius: 0;
+        page-break-after: always;
+        break-after: page;
     }
 
+    header,
     .topico,
     .faq,
     .contatos {
-        min-height: 95vh;
-        display: flex;
-        flex-direction: column;
+        height: 100vh;
         justify-content: center;
+        align-items: center;
         page-break-after: always;
         break-after: page;
+    }
+
+    h1,
+    h2 {
+        font-size: 3em;
+    }
+
+    .subtitulo {
+        font-size: 1.3em;
     }
 
     footer {
