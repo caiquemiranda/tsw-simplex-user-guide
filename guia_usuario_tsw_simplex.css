@@ -88,4 +88,54 @@ footer {
     font-size: 0.98em;
     border-top: 1px solid #e0e0e0;
     padding-top: 18px;
-} 
+}
+
+/* Quebra de página para impressão */
+.page-break {
+    page-break-before: always;
+    break-before: page;
+}
+
+@media print {
+    body {
+        background: #fff;
+    }
+
+    .container {
+        box-shadow: none;
+        margin: 0;
+        padding: 0 0 0 0;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .topico,
+    .faq,
+    .contatos {
+        min-height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        page-break-after: always;
+        break-after: page;
+    }
+
+    footer {
+        page-break-after: always;
+        break-after: page;
+    }
+}
+
+.faq-item {
+    margin-bottom: 22px;
+}
+
+.contatos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contatos li {
+    margin-bottom: 10px;
+    font-size: 1.08em;
+}
